@@ -1,0 +1,77 @@
+.level {
+  min-width: 150px;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  background-color: var(--color-grey);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.level.disable {
+  cursor: context-menu;
+}
+
+.level__name {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.level.disable .level__name {
+  color: var(--color-grey-dark);
+}
+
+.level__qty-words {
+  margin: 0;
+  font-size: .8rem;
+  text-align: left;
+}
+
+.level.disable .level__qty-words {
+  color: var(--color-grey-dark);
+}
+
+.level__sign {
+  margin: 0;
+  font-size: 1.3rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  background-color: var(--color-grey-dark);
+  border-radius: 4rem 0.5rem 0.5rem 4rem;
+  align-self: center;
+  text-transform: uppercase;
+  text-align: right;
+  transition: all 0.3s;
+}
+
+.level.active .level__sign--a1,
+.level:hover:not(.disable) .level__sign--a1 {
+  background-color: var(--color-level-a1);
+}
+
+.level.active .level__sign--a2,
+.level:hover:not(.disable) .level__sign--a2 {
+  background-color: var(--color-level-a2);
+}
+
+.level.active .level__sign--b1,
+.level:hover:not(.disable) .level__sign--b1 {
+  background-color: var(--color-level-b1);
+}
+
+.level.active .level__sign--b2,
+.level:hover:not(.disable) .level__sign--b2 {
+  background-color: var(--color-level-b2);
+}
+
+.level.active .level__sign--c1,
+.level:hover:not(.disable) .level__sign--c1 {
+  background-color: var(--color-level-c1);
+}
+
+.level.active .level__sign--c2,
+.level:hover:not(.disable) .level__sign--c2 {
+  background-color: var(--color-level-c2);
+}

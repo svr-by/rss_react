@@ -1,0 +1,41 @@
+.card-list {
+  width: 100%;
+  margin: 0 0 2rem 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  flex-grow: 1;
+}
+
+.pagination {
+  margin: 0 0 2.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card-list__link {
+  display: block;
+  width: calc((100% - 3rem) / 4);
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 1024px) {
+  .card-list__link {
+    width: calc((100% - 2rem) / 3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-list__link {
+    width: calc((100% - 1rem) / 2);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .card-list__link {
+    width: 100%;
+  }
+}

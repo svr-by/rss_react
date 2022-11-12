@@ -1,0 +1,27 @@
+.form-input {
+  flex-grow: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-grey-dark);
+}
+
+.form-input__input {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  border: 2px solid var(--color-grey);
+  outline-color: var(--color-blue);
+  border-radius: 0.2rem;
+  height: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.form-input__input--error {
+  border: 2px solid var(--color-red);
+}
+
+.form-input__error-mes {
+  color: var(--color-red);
+  font-size: 0.8rem;
+  text-transform: lowercase;
+}

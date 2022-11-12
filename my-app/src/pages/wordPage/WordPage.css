@@ -1,0 +1,28 @@
+.word-wrapper {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page-title--word {
+ text-transform: capitalize;
+}
+
+.content {
+  width: 450px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.btn-back {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.spinner {
+  padding: 3rem 0;
+}

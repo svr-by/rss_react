@@ -1,0 +1,115 @@
+.form {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-white);
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+              rgb(0 0 0 / 14%) 0px 3px 4px 0px, 
+              rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+
+.form__group {
+  display: flex;
+  gap: 2rem;
+}
+
+.form__field {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-grey-dark);
+}
+
+.form__fieldset {
+  padding: 1rem;
+  border: 2px solid var(--color-grey);
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.form__label {
+  flex-grow: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-grey-dark);
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  border: 2px solid var(--color-grey);
+  outline-color: var(--color-blue);
+  border-radius: 0.2rem;
+  height: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.form__input--error {
+  border: 2px solid var(--color-red);
+}
+
+.form__input--checkbox {
+  display: inline-block;
+  min-width: 1.8rem;
+}
+
+.form__img{
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 250px;
+  min-height: 250px;
+  object-fit: contain;
+}
+
+.form__error-mes {
+  color: var(--color-red);
+  font-size: 0.8rem;
+  text-transform: lowercase;
+}
+
+.form__btn {
+  margin: 2rem auto 1rem;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+}
+
+.form__hidden {
+  display: none;
+}
+
+
+.text-input {
+  flex-grow: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-grey-dark);
+}
+
+.text-input__input {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  border: 2px solid var(--color-grey);
+  outline-color: var(--color-blue);
+  border-radius: 0.2rem;
+  height: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.text-input__input--error {
+  border: 2px solid var(--color-red);
+}
+
+.text-input__error-mes {
+  color: var(--color-red);
+  font-size: 0.8rem;
+  text-transform: lowercase;
+}

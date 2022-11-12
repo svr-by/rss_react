@@ -1,0 +1,226 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+.card.card--short {
+  background-color: var(--color-grey);
+  cursor: pointer;
+}
+
+.card.card--full {
+  max-width: 450px;
+  background-color: var(--color-white);
+}
+
+.card.card--bordered {
+  padding: 1.5rem;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px, 
+              rgb(0 0 0 / 14%) 0px 3px 4px 0px, 
+              rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+
+
+.card.card--short:hover,
+.card.card--bordered:hover {
+  box-shadow: 0px 6px 11px 0px rgba(34, 60, 80, 0.4);
+}
+
+.card__img-wrap {
+  position: relative;
+  overflow: hidden; 
+  border-radius: 14px 14px 0 0;
+}
+
+.card__labels {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 5;
+  display: flex;
+  border-radius: 3px;
+  background-color: var(--color-blue-grey);
+  opacity: 0.7;
+}
+
+.label {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.label--hard {
+  background-image: url('../../assets/img/label-hard.png');
+}
+
+.label--learned {
+  background-image: url('../../assets/img/label-learned.png');
+}
+
+.card__date {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 5;
+  display: flex;
+  border-radius: 3px;
+  background-color: var(--color-blue-grey);
+  opacity: 0.7;
+  color: var(--color-white);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.card__stats {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 5;
+  display: flex;
+  border-radius: 3px;
+  background-color: var(--color-blue-grey);
+  opacity: 0.7;
+  color: var(--color-white);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.card__preloader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 250px;
+  min-height: 250px;
+  border-radius: 14px 14px 0 0;
+}
+
+.card__descp {
+  padding: 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start; 
+}
+
+.card.card--full .card__descp {
+  padding: 2rem 0 0 0;
+  flex-grow: 1;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  letter-spacing: -0.04em; 
+}
+
+.card.card--full .card__title {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.card__word, 
+.card__translate {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.card__translate {
+  display: block;
+  color: var(--color-grey-dark);
+}
+
+.card.card--full .card__translate {
+  display: inline-block;
+}
+
+.card__transcription {
+  margin-right: 0.5rem;
+  font: normal 600 1.2rem/140% "Montserrat";
+  letter-spacing: 0.04em; 
+}
+
+.card__audio {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-icon {
+  width: 35px;
+  height: 35px;
+  background-image: url('../../assets/img/icon-sound.svg');
+  filter: brightness(100); 
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card__sub-title {
+  margin: 1rem 0; 
+}
+
+.card__text-meaning {
+  margin: 0 0 12px 0;
+  padding-bottom: 12px;
+  font: normal 600 1rem/140% "Montserrat";
+  letter-spacing: -0.04em;
+  line-height: 150%;
+}
+
+.card__text-example {
+  margin: 0 0 20px 0;
+  font: normal 600 1rem/140% "Montserrat";
+  letter-spacing: -0.04em;
+  line-height: 150%;
+  flex-grow: 1;
+}
+
+.card__text--rus {
+  color: var(--color-grey-dark);
+}
+
+.card__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; 
+}
+
+.card__btn {
+  flex-grow: 1;
+}
+
+.card__btn--del {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  z-index: 5;
+  border-radius: 25%;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
